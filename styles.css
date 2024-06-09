@@ -75,6 +75,12 @@ input, select {
     padding: 10px;
     box-sizing: border-box;
 }
+
+.col2 {
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 button {
     background-color: black;
     color: white;
@@ -125,6 +131,14 @@ button:hover {
     border-color: #1b20f9; /* Color del borde al pasar el ratón */
 }
 
+/* Pasos */
+.pasos {
+    border-color: transparent; /* Borde transparente inicial */
+}
+
+.pasos:hover {
+    border-color: #1b20f9; /* Color del borde al pasar el ratón */
+}
 
 /* Media query para dispositivos con un ancho menor a 800px */
 @media (max-width: 800px) {

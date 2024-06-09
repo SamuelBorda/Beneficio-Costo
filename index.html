@@ -25,9 +25,19 @@
         $$P = \frac{A \left[ \frac{1 - (1 + i)^-n}{i} \right] + \frac{k}{(1 + i)^n}}{\text{Inversión}}$$
     </div>
     <div id="formulario" style="display:none;"></div>
-    <button class="calcular" onclick="calcular()" id="calcularBtn" style="display:none;">Calcular</button>
     <p id="resultado"></p>
-        <p id="conveniencia"></p>
+    <p id="conveniencia"></p>
+
+
+    <button class="calcular" onclick="calcular()" id="calcularBtn" style="display:none;">Calcular</button>
+    <button class="pasos" onclick="mostrarpasos()" id="pasosBtn" style="display:none;">Pasos</button>
+    
+
+    <!-- Contenedor para mostrar los pasos -->
+    <div id="pasosContainer"  style="display: none;" >
+        <h2>Pasos para encontrar la Relación Beneficio/Costo:</h2>
+        <textarea id="pasos" rows="10" cols="50" readonly></textarea>
+    </div>
 
 </div>
 
