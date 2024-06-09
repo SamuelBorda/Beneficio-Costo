@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacion Beneficio/Costo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Relacion Beneficio/Costo </h1>
+    <label for="opcion">Elija una opción</label>
+    <select id="opcion" onchange="mostrarFormulario()">
+        <option value="">Seleccione</option>
+        <option value="1">Encontrar Relacion B/C Modificable Individual</option>
+        <option value="2">Encontrar Relacion B/C Modificable Incremental</option>
+
+    </select>
+
+    <div class="formula" style="display:none;">
+        <p>la formula que se usara es :</p>
+        $$P = \frac{A \left[ \frac{1 - (1 + i)^-n}{i} \right] + \frac{k}{(1 + i)^n}}{\text{Inversión}}$$
+    </div>
+    <div id="formulario" style="display:none;"></div>
+    <button class="calcular" onclick="calcular()" id="calcularBtn" style="display:none;">Calcular</button>
+    <p id="resultado"></p>
+        <p id="conveniencia"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

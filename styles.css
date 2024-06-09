@@ -1,0 +1,139 @@
+body {
+    background: linear-gradient(to right bottom,#ACDEAA, #6B7B8E );
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #6B7B8E ;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px; /* Ajuste del ancho máximo */
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+.button{
+
+    cursor: pointer;
+
+}
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+label, p {
+    display: block;
+    margin: 10px auto 5px auto;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+
+input, select {
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+    border: none;
+}
+.proyecto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.proyecto h2 {
+    margin-top: 0;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0; /* Ajuste del margen */
+}
+
+.col {
+    flex: 0 0 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border-width: 5px; /* Grosor del borde */
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s;
+    border-color: transparent; /* Borde transparente inicial */
+}
+
+button:hover {
+    border-color:none;
+    
+}
+
+
+/* Agregar Proyecto */
+.agregar {
+    border-color: transparent; /* Borde transparente inicial */
+}
+
+.agregar:hover {
+    border-color: #009929; /* Color del borde al pasar el ratón */
+}
+
+/* Eliminar Proyecto */
+.eliminar {
+    border-color: transparent; /* Borde transparente inicial */
+}
+
+.eliminar:hover {
+    border-color: #d60000; /* Color del borde al pasar el ratón */
+}
+
+/* Calcular */
+.calcular {
+    border-color: transparent; /* Borde transparente inicial */
+}
+
+.calcular:hover {
+    border-color: #1b20f9; /* Color del borde al pasar el ratón */
+}
+
+
+/* Media query para dispositivos con un ancho menor a 800px */
+@media (max-width: 800px) {
+    .col {
+        flex: 0 0 100%;
+        padding: 10px 0;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
