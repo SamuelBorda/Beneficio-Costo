@@ -6,6 +6,13 @@ function mostrarFormulario() {
     const formularioDiv = document.getElementById('formulario');
     const calcularBtn = document.getElementById('calcularBtn');
     const pasosBtn = document.getElementById('pasosBtn');
+    const resultadoElement = document.getElementById('resultado');
+    const convenienciaElement = document.getElementById('conveniencia');
+
+    if (opcion === '1') {
+        resultadoElement.textContent = '';
+        convenienciaElement.textContent = '';
+    }
 
     if (opcion === '1' || opcion === '2') {
         formulaDiv.style.display = 'block';
